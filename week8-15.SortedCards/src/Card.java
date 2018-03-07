@@ -1,4 +1,4 @@
-public class Card {
+public class Card implements Comparable<Card> {
 
     /*
      * These are static constant variables. These variables can be used inside and outside
@@ -34,6 +34,16 @@ public class Card {
 
     public int getSuit() {
         return suit;
+    }
+
+    @Override
+    public int compareTo(Card c) {
+        if(this.getValue() != c.getValue()){
+            return this.getValue() - c.getValue();
+        }else{
+            return this.getSuit() - c.getSuit();
+        }
+
     }
 
 }
