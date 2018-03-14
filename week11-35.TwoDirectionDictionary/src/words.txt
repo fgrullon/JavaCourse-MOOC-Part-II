@@ -1,0 +1,3 @@
+banana:banaani
+monkey:apina
+ohjelmointi:programming
